@@ -1,0 +1,12 @@
+<I c="Trait" i="trait" m="traits.traits" n="o19_trait_Hidden_Super_Nanny" s="775449611"><!-- 2E386C0B -->
+    <L n="ages">
+        <E>TEEN</E>
+        <E>YOUNGADULT</E>
+        <E>ADULT</E>
+    </L>
+    <T n="icon" p="InGame\UI\Icons\Debug\missing_image.png">2f7d0004:00000000:30f0846c783606f9</T>
+    <L n="species">
+        <E/>
+    </L>
+    <E n="trait_type">HIDDEN</E>
+</I>
