@@ -7,7 +7,6 @@
         </V>
         <L n="filter_flag"/>
         <E n="gender">FEMALE</E>
-        <T n="tunable_tag_set">16742<!-- TagSet_NPC_gentry --></T>
         <L n="weighted_tag_lists">
             <T>203540<!-- tunableWeightedTagList_Style_Default --></T>
         </L>
@@ -172,6 +171,7 @@
         </L>
         <L n="explicit">
             <T>775449611</T><!-- o19_trait_Hidden_Super_Nanny -->
+            <T>13518802407511292722<!-- DeviousDesires_MilkFarm_Trait_Breast_Milk_Producer_Basic --></T>
         </L>
         <V n="num_random" t="enabled">
             <U n="enabled">

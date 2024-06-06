@@ -35,10 +35,13 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '0.0.1'
+        return '0.0.2'
 
 
 r'''
+v0.0.2
+    Fix menu text
+    Added resources to git
 v0.0.1
     Initial version.
 '''

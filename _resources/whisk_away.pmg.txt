@@ -1,0 +1,385 @@
+{
+    # The generated 'Package' file will be saved to '_Mods/{author}/{author}_{mod_name}_PieMenu_CC.package'
+    # The generated code snippets will be saved to '_Mods/{author}/Scripts/{mod_folder}/'
+    'author': 'o19',
+    'mod_name': 'Whisk Away',
+    'mod_folder': 'whisk_away.pie',  # All files in this folder will be deleted! Do not point to your mod folder.
+
+    # Binary resources
+    # They can be added to '_src/{mod_folder}/binary/' and will be added as-is to the 'Package' file.
+
+    # Images resources
+    # Add DDS images for the mod to the '_src/{mod_folder}/images/' folder. They will be added as-is (no conversion!).
+    # DDS format which should work: Size: 128x128 px², Compression: BC3, Mipmaps: yes
+
+    # Deprecated 'Texts' entry to allow to add strings. [[ TODO: Read a JSON file ]]
+    # Name (for the context) + Text pairs should be defined.
+    'Texts': [
+        { "Name": "Title_New_Household_1", "Text": "New Residence"},
+        { "Name": "Title_New_Household_2", "Text": "New Lodging"},  # alternative random text
+        { "Name": "Title_New_Household_3", "Text": "New Dwelling"},  # alternative random text
+        { "Name": "New_Household_1", "Text": "{0.SimFirstName} likes the new household."},
+        { "Name": "New_Household_2", "Text": "{0.SimFirstName} hates the new household, {0.SimPronounSubjective} wants back its old life."},
+        { "Name": "New_Household_3", "Text": "{0.SimFirstName} is happy in the new household."},
+        { "Name": "New_Household_4", "Text": "{0.SimFirstName} feels content in {0.SimPronounPossessiveDependent} new apartment."},
+        { "Name": "New_Household_5", "Text": "{0.SimFirstName} is joyful in {0.SimPronounPossessiveDependent} new home."},
+        { "Name": "New_Household_6", "Text": "{0.SimFirstName} is pleased with {0.SimPronounPossessiveDependent} new living situation."},
+        { "Name": "New_Household_7", "Text": "{0.SimFirstName} is delighted in {0.SimPronounPossessiveDependent} new place."},
+        { "Name": "New_Household_8", "Text": "{0.SimFirstName} finds peace in {0.SimPronounPossessiveDependent} new residence."},
+        { "Name": "New_Household_9", "Text": "{0.SimFirstName} finds peace in {0.SimPronounPossessiveDependent} new residence."},
+        { "Name": "New_Household_10", "Text": "{0.SimFirstName} is very sad, why did you do this?"},
+        { "Name": "Title_Death_1", "Text": "THE END"},
+        { "Name": "Title_Death_2", "Text": "RIP"},
+        { "Name": "Title_Death_3", "Text": "Rest In Peace"},
+        { "Name": "Death_1", "Text": "{0.SimFirstName} is now burning in hell."},
+        { "Name": "Death_2", "Text": "{0.SimFirstName} looks down from heaven and can't believe what {0.SimPronounPossessiveDependent} is seeing down there. It's you playing 'The Sims 4'"},
+        { "Name": "Death_3", "Text": "{0.SimFirstName} is going west, through the deserts of peace, love and ecstasy."},
+        { "Name": "Death_4", "Text": "{0.SimFirstName} feels now more alive than before."},
+        { "Name": "Death_5", "Text": "{0.SimFirstName} enjoys the silence."},
+        { "Name": "Death_6", "Text": "{0.SimFirstName} requests that you exit the game without saving to be included in the game again!"},
+        { "Name": "Death_7", "Text": "{0.SimFirstName} rests in eternal darkness."},
+        { "Name": "Death_8", "Text": "{0.SimFirstName} is now lost to the void."},
+        { "Name": "Death_9", "Text": "{0.SimFirstName} wanders the forgotten realms."},
+        { "Name": "Death_10", "Text": "{0.SimFirstName} lingers in the shadowed abyss."},
+        { "Name": "Death_11", "Text": "{0.SimFirstName} is embraced by the eternal night."},
+        { "Name": "Death_12", "Text": "{0.SimFirstName} enjoys eternal peace."},
+        { "Name": "Death_13", "Text": "{0.SimFirstName} is now surrounded by celestial harmony."},
+        { "Name": "Death_14", "Text": "{0.SimFirstName} finds joy in paradise."},
+        { "Name": "Death_15", "Text": "{0.SimFirstName} revels in heavenly bliss."},
+        { "Name": "Death_16", "Text": "{0.SimFirstName} basks in the light of heaven."},
+        { "Name": "Death_17", "Text": "At night, {0.SimFirstName} will whispers your name from the shadows of your room."},
+        { "Name": "Death_18", "Text": "In the dead of night, {0.SimFirstName} will stand at the foot of your bed, staring silently."},
+        { "Name": "Death_19", "Text": "At night, you will feel {0.SimFirstName}'s icy fingers brushing against your cheek as you sleep."},
+        { "Name": "Death_20", "Text": "{0.SimFirstName} knows what you did last summer."},
+		{ "Name": "Title_Bad_Religion", "Text": "The Auditors"},
+        { "Name": "Bad_Religion_1", "Text": "Your action has been reported to The Auditors. They will take appropriate actions."},
+        { "Name": "Bad_Religion_2", "Text": "Your action has been reported to EA. They will ban your account soon."},
+        { "Name": "Bad_Religion_3", "Text": "Law enforcement has been notified. Open the door and comply without resistance."},
+        { "Name": "Bad_Religion_4", "Text": "Your action has been reported to o19, don't fear consequences. They already now what you did last summer."},
+        { "Name": "Bad_Religion_5", "Text": "The Shadows have marked you. Their judgment is imminent."},
+        { "Name": "Bad_Religion_6", "Text": "Your actions have summoned The Wraiths. They will rectify your transgressions."},
+        { "Name": "Bad_Religion_7", "Text": "Authorities have been alerted to your location. Do not resist; comply with all instructions."},
+        { "Name": "Bad_Religion_8", "Text": "You have crossed the line. The Enforcers are coming for you."},
+        { "Name": "Bad_Religion_9", "Text": "'The Sims 4' has noted your misconduct. The Grim Reaper will visit you soon."},
+        { "Name": "Bad_Religion_10", "Text": "Your transgressions have been logged. You will be arrested shortly."},
+    ],
+
+    # Definition of the 'Pie Menu Categories' (folders)
+    'PieMenuCategory': {
+        # One entry per line, the 1st line should not contain a slash.
+        # Unless it starts with a parent number like 142150 for 'Outfit' or 15507 for 'Friendly'. Then the menu will be not added to 'root'
+        # Format: '(.../)parent/category'. Parent may be missing or a number to reference to other mods.
+
+        'Whisk Away': {'debug': True, 'icon': '00B2D882!00000000!2C614AC3A147897A.DSTImage.dds', },
+        'Whisk Away/Go West': {'debug': True, 'icon': '00B2D882!00000000!0FF4302DC3CDC7FC.DSTImage.dds', 'display_priority': 1,},
+        'Whisk Away/Eternal Void': {'debug': True, 'icon': '00B2D882!00000000!3CE4241584292302.DSTImage.dds', 'display_priority': 1,},
+        'Whisk Away/Bad Religion': {'debug': True, 'icon': '00B2D882!00000000!F05830D1B85F9350.DSTImage.dds', 'display_priority': 1,},
+        # Other options to add: {'collapsible': 0, 'display_priority': 1, 'icon': '40x40-image.dds',
+        # display_priority -> default="1", 0..10 - highest=10 (before all pie menu actions)
+    },
+
+    # Definition of the 'Pie Menu Actions'
+    'PieMenuActions': {
+        'interactions': {  # == {file_name} with path: "{mod_folder}/{this.replace('.', '/')}.py" + '..._reg.py'
+            'InteractionsWhiskAway': [  # == classes: {c}, _Register{this}_{i}
+                {
+                    'display_name': 'PieMenuActions_DEFAULTS',  # Used to pre-define a few things globally
+                    'parent': 'Whisk Away',
+                    'reg': ['ON_SCRIPT_OBJECT_LOAD', ],  # default reg = ['ON_SCRIPT_OBJECT_LOAD', ]
+                    'debug': True,
+                    'tunables': {
+                        'whisk_id': {'default': 0, 'type': 'int'},
+                    }
+                }, {
+                    # 'parent' can be defined here, otherwise the value from the previous entry is used
+                    'stbl_name': 'PMA_SendSimToSuperNanny',  # Test - now supported !
+                    'display_name': 'To Super-Nanny',  # Whisk Away ... > To Super-Nanny
+                    'icon': '00B2D882!00000000!7AB640D8A49DB05C.DSTImage.dds',
+                    'pie_menu_priority': 10,   # 1st item to show
+                    'tunables': {
+                        'whisk_id': {'value': 1},
+                    },
+                }, {
+                    'display_name': 'Sell to Family',  # Whisk Away ... > Sell to Family
+                    'icon': '00B2D882!00000000!31AB9B63A3FCCB8E.DSTImage.dds',
+                    'pie_menu_priority': 9,
+                    'tunables': {
+                        'whisk_id': {'value': 2},
+                    },
+                }, {
+                    'display_name': 'Baby Hatch',  # Whisk Away ... > Go west ... > Baby Hatch
+                    'icon': '00B2D882!00000000!C6CE42EC3279AE59.DSTImage.dds',
+                    'pie_menu_priority': 8,
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+                }, {
+                    'display_name': 'Throw into Wishing Well',  # Whisk Away ... > Throw into Wishing Well
+                    'icon': '2f7d0004:00000000:82fe67e434a755b6',  # Wishing Well
+                    'pie_menu_priority': 7,
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+                }, {
+                    'display_name': 'Tie to the dog kennel',  # Whisk Away ... > Tie to the dog kennel
+                    'pie_menu_priority': 6,
+                    'icon': '00B2D882!00000000!B0AD5DE594CE1AA7.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+                }, {
+                    'display_name': 'Throw into Dumpster',  # Whisk Away ... > Throw into Dumpster
+                    'icon': '00B2D882!00000000!741B14938997ABE0.DSTImage.dds',  # doll in bin
+                    'pie_menu_priority': 2,
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+                }, {
+                    'display_name': 'Send to end of the rainbow',  # Whisk Away ... > Send to end of the rainbow
+                    'icon': '00B2D882!00000000!48F37EC1498AF364.DSTImage.dds',  # rainbow
+                    'pie_menu_priority': 3,
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+                }, {
+                    'display_name': 'Lock in closet and throw key away',  # Whisk Away ... > Lock in closet and throw key away
+                    'icon': '00B2D882!00000000!3AA4A7AB0C9127BD.DSTImage.dds',
+                    'pie_menu_priority': 4,
+                    'tunables': {
+                        'whisk_id': {'value': 3},
+                    },
+				}, {
+                    'parent': 'Whisk Away/Go west',
+                    'icon': '00B2D882!00000000!92F1D8E267727E80.DSTImage.dds',  # bear
+                    'display_name': 'Abandon in forest',  # Whisk Away ... > Go west ... > abandon in forest
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Drown in Bathtub',  # Whisk Away ... > Go west ... > Drown in Bathtub
+                    'icon': '00B2D882!00000000!267CF12C0F0B8A11.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Burn in Oven',  # Whisk Away ... > Go west ... > Burn in Oven
+                    'icon': '00B2D882!00000000!FD46E55D186B59AE.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Freeze in Fridge',  # Whisk Away ... > Go west ... > Freeze in Fridge
+                    'icon': '00B2D882!00000000!32529635CBA90F43.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Feed the Pigs',  # Whisk Away ... > Go west ... > Feed the Pigs
+                    'icon': '00B2D882!00000000!F130F4C47DF9CB0E.DSTImage.dds',  # pig
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Bury Alive',  # Whisk Away ... > Go west ... > Bury Alive
+                    'icon': '00B2D882!00000000!10FDCF504C7A4BA6.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Stuffing the sim',  # Whisk Away ... > Go west ... > Stuffing the sim
+                    'icon': '00B2D882!00000000!BD8F0495F83D2412.DSTImage.dds', # broken teddy
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Eat {1.SimFirstName}',  # Whisk Away ... > Go west ... > Eat sim
+                    'icon': '00B2D882!00000000!F99E0AD6488F4F85.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Chop wood',  # Whisk Away ... > Go west ... > Chop wood
+                    'icon': '00B2D882!00000000!D541D5B97C1723FE.DSTImage.dds',  # chainsaw
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Throw to lions',  # Whisk Away ... > Go west ... > Throw to lions
+                    'icon': '00B2D882!00000000!BF3B80BB45B0AF13.DSTImage.dds',  # wolf
+                    # '00B2D882!00000000!F1B525E9C23C2016.DSTImage.dds',  # dog
+                    # '00B2D882!00000000!FA3B3386142392CC.DSTImage.dds',  # cat
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Give toy to play with',  # Whisk Away ... > Go west ... > Give toy to play with
+                    'icon': '00B2D882!00000000!F3F40148CA4A60A4.DSTImage.dds',  # light saber
+                    # '00B2D882!00000000!76F35B5452937A55.DSTImage.dds', knife
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Tickle to death',  # Whisk Away ... > Go west ... > Tickle to death
+                    'icon': '00B2D882!00000000!724E4F085507E817.DSTImage.dds',  # tickle
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Go west',
+                    'display_name': 'Scare to death',  # Whisk Away ... > Go west ... > Scare to death
+                    'icon': '00B2D882!00000000!B90731E115319BD0.DSTImage.dds',  # Scream
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'pie_menu_priority': 10,   # 1st item to show
+                    'display_name': 'Rest In Peace',  # Whisk Away ... > Eternal Void ... > RIP
+                    'icon': '00B2D882!00000000!7266EFD0000E6EF3.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Donate blood',  # Whisk Away ... > Eternal Void ... > Donate blood
+                    'icon': '00B2D882!00000000!6830E311105FB3FC.DSTImage.dds',  # vampire
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Play with Voodoo Doll',  # Whisk Away ... > Eternal Void ... > Play with Voodoo Doll
+                    'icon': '00B2D882!00000000!7DC06723E64D7316.DSTImage.dds',  # Voodoo Doll
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Alien abduction',  # Whisk Away ... > Eternal Void ... > Alien abduction
+                    'icon': '00B2D882!00000000!C49D8DDE3DFC4AA9.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Send to outer space',  # Whisk Away ... > Eternal Void ... > Send to outer space
+                    'icon': '00B2D882!00000000!0CFC8A8443E4B5AE.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Feed the Cow Plant',  # Whisk Away ... > Eternal Void ... > Feed the Cow Plant
+                    # 'icon': '00B2D882!00000000!A72300ACB7937E5B.DSTImage.dds',  # SF-Plant
+                    'icon': '00B2D882!00000000!38FCDF13D0D190F2.DSTImage.dds',  # Cow Plant
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Put in Murphy Bed',  # Whisk Away ... > Eternal Void ... > Put in Murphy Bed
+                    'icon': '00B2D882!00000000!F2B21BF277B8DDE1.DSTImage.dds', # Murphy Bed
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Arrange meeting with Death',  # Whisk Away ... > Eternal Void ... > Arrange meeting with Death
+                    'icon': '00B2D882!00000000!354D3FADC00D9261.DSTImage.dds',  # Death
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+					},
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Invite to play with shark',  # Whisk Away ... > Eternal Void ... > Invite to play with shark
+                    'icon': '00B2D882!00000000!1DB6FAADA5481D8F.DSTImage.dds',  # shark
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Poison',  # Whisk Away ... > Eternal Void ... > Poison
+                    # 'icon': '00B2D882!00000000!68B812B37A2C5837.DSTImage.dds',
+                    'icon': '00B2D882!00000000!05B7C2AD53285DD1.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Throw out of plane',  # Whisk Away ... > Eternal Void ... > Throw out of plane
+                    'icon': '00B2D882!00000000!540B941EE3590BFB.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'icon': '00B2D882!00000000!623CF867E1A91623.DSTImage.dds',   # Coffin
+                    'display_name': 'Put alive in hanging coffin',  # Whisk Away ... > Eternal Void ... > Put alive in hanging coffin
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Eternal Void',
+                    'display_name': 'Electrocution',  # Whisk Away ... > Eternal Void ... > Electrocution
+                    'icon': '00B2D882!00000000!031405CDAF6025E8.DSTImage.dds',
+                    'tunables': {
+                        'whisk_id': {'value': -1},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this race',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!CDAA68799250052F.DSTImage.dds',  # man
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+                }, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this gender',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!75A1ACA2763417F0.DSTImage.dds',  # robot
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+				}, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this body shape',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!BAAF5F51A353BA6E.DSTImage.dds',  # superman
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+				}, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this voice',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!CDAA68799250052F.DSTImage.dds',  # woman
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+				}, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this look',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!86F6E150CBFEB0EA.DSTImage.dds',  # smily
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+				}, {
+                    'parent': 'Whisk Away/Bad Religion',
+                    'display_name': 'Exterminate this breed',  # Whisk Away ... > Bad Religion ... >
+                    'icon': '00B2D882!00000000!9803B2F8E15BAFC1.DSTImage.dds',  # mermaid
+                    'tunables': {
+                        'whisk_id': {'value': -2},
+                    },
+                },
+            ],
+        }
+    }
+}

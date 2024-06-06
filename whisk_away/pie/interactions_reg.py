@@ -46,7 +46,7 @@ class RegisterInteractionsWhiskAwayWhisk_Away0(CommonScriptObjectInteractionHand
             0xA9DD36B3A0A7644C,  # 'Electrocution' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Eternal_Void_PMA_Electrocution_debug')
             0xF1097B24B625081A,  # 'Exterminate this race' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_race_debug')
             0xCC201857D5FA5796,  # 'Exterminate this gender' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_gender_debug')
-            0x27C77DFA4198E684,  # 'Exterminate body shape gender' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_body_shape_gender_debug')
+            0xF84AF7B9E0F4C013,  # 'Exterminate this body shape' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_body_shape_debug')
             0x3A63737F84C4DAF9,  # 'Exterminate this voice' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_voice_debug')
             0xF21955F7CB91CC0C,  # 'Exterminate this look' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_look_debug')
             0xB98F0D1003BD7735,  # 'Exterminate this breed' - fnv('o19_Whisk_Away_PMC__Whisk_Away__Bad_Religion_PMA_Exterminate_this_breed_debug')
