@@ -6,15 +6,20 @@ Unlike sims which die this mod simply removes the sims, no one will be happy or 
 It is a cheat interaction and available for all sims, not limited to babies.
 Some menu options might make no sense for adult sims.
 
-There is no check for standard sims which should probably not be moved.
+There is no check for standard sims (like Rey, Hondo, ...) which should probably not be whisked away.
 
 The 'Whisk Away' main options will move the sim to a different household.
 * 'Super-Nanny' is a female to care about minors.
-* 'Family' are a male and female sim.
-  * All other options will randomly select one ot the other.
+* 'Family' needs at least one male and female sim (teen and/or young adult). The agency believes that a male and a female sim is needed.
+  * All other options will randomly select one or the other.
+  * In case no Family can be found the agency looks for a Super-Nanny.
+  * In case no Super-Nanny an be found this sim will not be whisked away.
 
-The 'advanced' options will be visible after clicking 'More ...' and then into one of the 3 sub menus.
+There is no 'Undo' while the sim can be found in a random household unless TS4 clears un-played households.
+
+After clicking on 'More ...' the 'advanced' options will be visible within three sub menus.
 All available options will remove the sim from the game, there is no undo.
+There are no (violence, fire, abduction, ...) animations, the sim will simply be removed.
 
 ## Age limitation
 Child and younger sims can only whisk away sims with the same and or younger sims.
@@ -22,14 +27,14 @@ Teen to elder sims can whisk away random sims.
 
 ## Family limitations
 Only family members can whisk away child or younger sims.
-Mean sims should be abel to whisk away random child sims, anyhow this is currently not working.
+Mean and/or insane sims should be able to whisk away random child sims, anyhow this is currently not implemented.
 
 
 
 # Addendum
 
 ## Game compatibility
-This mod has been tested with `The Sims 4` 1.110.294, S4CL 3.7, TS4Lib 0.3.24 (2024-07-25).
+This mod has been tested with `The Sims 4` 1.110.294, S4CL 3.7, TS4Lib 0.3.25 (2024-11-03).
 It is expected to be compatible with many upcoming releases of TS4, S4CL and TS4Lib.
 
 ## Dependencies

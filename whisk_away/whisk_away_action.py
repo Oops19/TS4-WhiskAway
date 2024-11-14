@@ -86,7 +86,7 @@ class WhiskAwayAction:
             if interaction_id == 3:
                 # Fate, Throw sim-object into ... Super-Nanny or Family
                 interaction_id = random.randint(1, 2)
-                log.debug(f"Sim will be integrated into a new live within {'Super-Nanny' if interaction_id == 1 else 'Family'}.")
+                log.debug(f"Sim will be integrated into a new live within {'Super-Nanny' if interaction_id == 1 else 'a Family'}.")
 
             if interaction_id == 2:
                 # Family
