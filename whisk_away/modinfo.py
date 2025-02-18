@@ -35,10 +35,12 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '0.0.3'
+        return '0.0.4'
 
 
 r'''
+v0.0.4
+    No need to update, just a year 2025 build to update the documentation / tested dependencies.
 v0.0.3
     Fix STBL
 v0.0.2

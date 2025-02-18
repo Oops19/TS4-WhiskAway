@@ -43,15 +43,15 @@ class WhiskAwayAction:
             """
             if CommonAgeUtils.is_child(source_sim_info):
                 if not CommonAgeUtils.is_baby_infant_toddler_or_child(target_sim_info):
-                    log.debug(':-( Search a younger target, baby! )-:')
+                    log.debug(':-( Search a younger target, child! )-:')
                     return CommonExecutionResult.TRUE  # Do nothing
             if CommonAgeUtils.is_toddler(source_sim_info):
                 if not CommonAgeUtils.is_baby_infant_or_toddler(target_sim_info):
-                    log.debug(':-( Search a younger target, baby! )-:')
+                    log.debug(':-( Search a younger target, toddler! )-:')
                     return CommonExecutionResult.TRUE  # Do nothing
             if CommonAgeUtils.is_infant(source_sim_info):
                 if not (CommonAgeUtils.is_baby(target_sim_info) or CommonAgeUtils.is_infant(target_sim_info)):
-                    log.debug(':-( Search a younger target, baby! )-:')
+                    log.debug(':-( Search a younger target, infant! )-:')
                     return CommonExecutionResult.TRUE  # Do nothing
             if CommonAgeUtils.is_baby(source_sim_info):
                 log.debug(":-( You're a baby. What do you know about virtual life? )-:")

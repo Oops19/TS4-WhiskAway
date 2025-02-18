@@ -34,7 +34,7 @@ Mean and/or insane sims should be able to whisk away random child sims, anyhow t
 # Addendum
 
 ## Game compatibility
-This mod has been tested with `The Sims 4` 1.111.102, S4CL 3.9, TS4Lib 0.3.36.
+This mod has been tested with `The Sims 4` 1.111.102, S4CL 3.10, TS4Lib 0.3.36.
 It is expected to be compatible with many upcoming releases of TS4, S4CL and TS4Lib.
 
 ## Dependencies
