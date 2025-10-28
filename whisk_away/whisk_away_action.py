@@ -1,3 +1,9 @@
+#
+# LICENSE https://creativecommons.org/licenses/by/4.0/ https://creativecommons.org/licenses/by/4.0/legalcode
+# © 2025 https://github.com/Oops19
+#
+
+
 import random
 
 from sims.genealogy_tracker import FamilyRelationshipIndex
@@ -81,6 +87,7 @@ class WhiskAwayAction:
                         return CommonExecutionResult.TRUE
 
             interaction_id = getattr(interaction, 'whisk_id')
+            log.debug(f"interaction_id = {interaction_id}")
             household = None
 
             if interaction_id == 3:
@@ -133,6 +140,8 @@ class WhiskAwayAction:
                     # CommonHouseholdUtils.delete_household(household)
                     household.set_to_hidden()
                     target_sim_info.remove_permanently(household=household)
+                    household.destroy_household_if_empty()
+                    log.debug(f"Removed {target_sim_info} permanently")
                 except Exception as e:
                     errors = True
                     log.warn(f"Oops: '{e}' - Could not destroy sim properly")
