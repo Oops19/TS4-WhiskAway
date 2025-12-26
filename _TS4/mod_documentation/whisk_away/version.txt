@@ -1,5 +1,6 @@
-WhiskAway v0.0.5 for The Sims 4 v1.120.117 and S4CL v3.17
-Created on 2025-12-14
-v0.0.5
-    Added more logging
+WhiskAway v0.1.0 for The Sims 4 v1.120.117 and S4CL v3.17
+Created on 2025-12-24
+v0.1.0
+    Requires TS4Lib 0.4.0+
+    Replace CommonEnum with CustomEnum
 

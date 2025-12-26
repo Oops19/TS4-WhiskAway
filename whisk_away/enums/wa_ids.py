@@ -1,7 +1,9 @@
-from ts4lib.common_enums.enum_types.common_enum import CommonEnum
 
 
-class WhiskAwayIDs(CommonEnum):
+from ts4lib.custom_enums.enum_types.custom_enum import CustomEnum
+
+
+class WhiskAwayIDs(CustomEnum):
     o19_HH_template_female_nanny = 11285387617501615036
     o19_trait_Hidden_Super_Nanny_id = 775449611
 
