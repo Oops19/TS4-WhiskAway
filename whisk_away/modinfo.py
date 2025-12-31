@@ -35,11 +35,11 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '0.1.0'
+        return '1.0.0'
 
 
 r'''
-v0.1.0
+v1.0.0
     Requires TS4Lib 0.4.0+
     Replace CommonEnum with CustomEnum
 v0.0.5
